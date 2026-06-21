@@ -5,6 +5,7 @@ using MyInterface._3.InterfaceWithProperty.Interfaces;
 using MyInterface._4.SOLID_Interface_Segragation.BadExample;
 using MyInterface._4.SOLID_Interface_Segragation.GoodExample;
 using MyInterface._5.ImplicitAndExplicit;
+using MyInterface._6.DefaultImplementation;
 
 namespace MyInterface;
 
@@ -149,9 +150,12 @@ public class Program
 
         #endregion
 
-        #region DefaultImplimentation
+        #region DefaultImplementation
 
+        var rectangle = new Rectange();
 
+        rectangle.Draw();
+        rectangle.Foo();
 
 
         #endregion
