@@ -1,5 +1,7 @@
 ﻿using MyInterface._1.InterfaceWithAbstract;
 using MyInterface._2.InterfaceExtend;
+using MyInterface._3.InterfaceWithProperty.ClassAndInterface;
+using MyInterface._3.InterfaceWithProperty.Interfaces;
 
 namespace MyInterface;
 
@@ -63,14 +65,31 @@ public class Program
 
         #region InterfaceExtend
 
-        var some = new Some();
-
-        some.Boo();
-        some.Foo();
+        // var some = new Some();
+        // 
+        // some.Boo();
+        // some.Foo();
 
         #endregion
 
+        #region InterfaceWithProperty
 
+        // var workers = new List<IWorker>();
+        //
+        //
+        // workers.Add(new Cashier());
+        // workers.Add(new Cashier());
+        // workers.Add(new Seller());
+        // workers.Add(new Seller());
+        // workers.Add(new Seller());
+        // workers.Add(new Director());
+        //
+        // foreach (var worker in workers)
+        // {
+        //     worker.Work();
+        // }
+
+        #endregion
 
 
 
