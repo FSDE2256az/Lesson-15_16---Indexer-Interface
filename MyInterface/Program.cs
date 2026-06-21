@@ -2,6 +2,8 @@
 using MyInterface._2.InterfaceExtend;
 using MyInterface._3.InterfaceWithProperty.ClassAndInterface;
 using MyInterface._3.InterfaceWithProperty.Interfaces;
+using MyInterface._4.SOLID_Interface_Segragation.BadExample;
+using MyInterface._4.SOLID_Interface_Segragation.GoodExample;
 
 namespace MyInterface;
 
@@ -91,7 +93,55 @@ public class Program
 
         #endregion
 
+        #region InterfaceSegragation
 
+        #region BadCase
+
+        // var players = new List<IPlayer>();
+        // 
+        // players.Add(new DivMediaPlayer());
+        // players.Add(new WinApp());
+        // players.Add(new CavidPlayer());
+        // 
+        // foreach (var player in players)
+        // {
+        //     player.PlayAudio();
+        //     player.PlayVideo();
+        // }
+
+        #endregion
+
+        #region GoodCase
+
+        var audioPlayer = new List<IAudioPlayer>();
+
+        audioPlayer.Add(new MyInterface._4.SOLID_Interface_Segragation.GoodExample.DivMediaPlayer());
+        audioPlayer.Add(new MyInterface._4.SOLID_Interface_Segragation.GoodExample.WinApp());
+        //audioPlayer.Add(new MyInterface._4.SOLID_Interface_Segragation.GoodExample.CavidPlayer());
+
+        foreach (var item in audioPlayer)
+            item.PlayAudio();
+
+
+        var videoPlayer = new List<IVideoPlayer>();
+
+        videoPlayer.Add(new MyInterface._4.SOLID_Interface_Segragation.GoodExample.DivMediaPlayer());
+        //videoPlayer.Add(new MyInterface._4.SOLID_Interface_Segragation.GoodExample.WinApp());
+        videoPlayer.Add(new MyInterface._4.SOLID_Interface_Segragation.GoodExample.CavidPlayer());
+
+
+        foreach (var item in videoPlayer)
+            item.PlayVideo();
+
+        #endregion
+
+        #endregion
+
+        #region ImplicitAndExplicit
+
+
+
+        #endregion
 
     }
 }
