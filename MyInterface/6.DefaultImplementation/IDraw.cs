@@ -5,7 +5,6 @@ public interface IDraw
     public void Foo() { Console.WriteLine("Default implementation"); }
 
     void Draw();
-
 }
 
 

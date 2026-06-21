@@ -155,20 +155,44 @@ public class Program
         // var rectangle = new Rectange();
 
         // rectangle.Draw();
-        // // rectangle.Foo();
+        // // rectangle.Foo(); // adi vezyetde override etmemisikse gormuruk
 
 
-        var shapes = new List<IDraw>();
+        // var shapes = new List<IDraw>();
+        // 
+        // shapes.Add(new Rectange());
+        // shapes.Add(new Circle());
+        // 
+        // 
+        // foreach (var shape in shapes)
+        // {
+        //     shape.Draw();
+        //     shape.Foo(); // override edilenin code-un verir, yoxdursa default implementation-u verir
+        // }
 
-        shapes.Add(new Rectange());
-        shapes.Add(new Circle());
+        #endregion
 
 
-        foreach (var shape in shapes)
-        {
-            shape.Draw();
-            shape.Foo();
-        }
+        #region Information
+
+        // Interface daxilinde neler yazmaq olar
+
+        // 1. Property
+        // 2. Methods
+        // 3. Indexer ( IList, IDictionary )
+        // 4. Event   ( NotifyPropertyChanged )
+
+        // 5. Static field
+        // 6. Constant
+        // 7. Static contructor
+        // 8. Operator
+
+
+        // Interface daxilinde neler yazmaq olmaz!!!
+
+        // 1. Field
+        // 2. Constructor
+        // 3. Destructor
 
         #endregion
 
