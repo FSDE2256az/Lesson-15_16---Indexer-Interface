@@ -1,4 +1,5 @@
 ﻿using MyInterface._1.InterfaceWithAbstract;
+using MyInterface._2.InterfaceExtend;
 
 namespace MyInterface;
 
@@ -44,21 +45,28 @@ public class Program
         //  (mercedes2 as ITurbo)!.Turbo();
         //  (mercedes2 as ISport)!.Sport();
 
-        List<IClassic> cars = new List<IClassic>();
+        // List<IClassic> cars = new List<IClassic>();
+        // 
+        // cars.Add(new Mercedes());
+        // cars.Add(new UAZ());
+        // 
+        // foreach (var car in cars)
+        // {
+        //     car.Classic();
+        // 
+        //     if (car is ITurbo s)
+        //         s.Turbo();
+        // 
+        // }
 
-        cars.Add(new Mercedes());
-        cars.Add(new UAZ());
+        #endregion
 
-        foreach (var car in cars)
-        {
-            car.Classic();
+        #region InterfaceExtend
 
-            if (car is ITurbo s)
-                s.Turbo();
-        
-        }
+        var some = new Some();
 
-
+        some.Boo();
+        some.Foo();
 
         #endregion
 
