@@ -16,3 +16,11 @@ class Rectange : IDraw
 
 }
 
+class Circle : IDraw
+{
+    public void Draw() => Console.WriteLine("Circle draw");
+
+}
+
+
+

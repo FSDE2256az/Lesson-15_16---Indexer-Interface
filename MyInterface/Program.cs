@@ -152,11 +152,23 @@ public class Program
 
         #region DefaultImplementation
 
-        var rectangle = new Rectange();
+        // var rectangle = new Rectange();
 
-        rectangle.Draw();
-        rectangle.Foo();
+        // rectangle.Draw();
+        // // rectangle.Foo();
 
+
+        var shapes = new List<IDraw>();
+
+        shapes.Add(new Rectange());
+        shapes.Add(new Circle());
+
+
+        foreach (var shape in shapes)
+        {
+            shape.Draw();
+            shape.Foo();
+        }
 
         #endregion
 
